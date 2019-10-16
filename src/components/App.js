@@ -7,6 +7,12 @@ import axios from "axios";
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=6cb6fea1";
 
+const initialState = {
+  loading: true,
+  movies: [],
+  errorMessage: null
+};
+
 const App = () => {
   const [loading,setLoading] = useState(true);
   const [movies,setMovies] = useState([]);
