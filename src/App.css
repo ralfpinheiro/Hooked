@@ -7,6 +7,8 @@ body {
 
 header{
   font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
 }
 
 .App {
@@ -53,8 +55,8 @@ header{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
-  max-width: 900px;
+  justify-content: space-between;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -75,12 +77,11 @@ header{
 
 .movie {
   padding: 25px 35px 10px 25px;
-  max-width: 25%;
+  max-width: 33.33%;
 }
 
-.movie h2 {
-  font-size: 18px;
-  color: #252525;
+.movie img {
+  width: 200px;
 }
 
 .movie-year {
@@ -119,15 +120,8 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   width: 100px;
+  font-size: 16px;
 }
-
-
-input[type="submit"]:hover {
-  background-color: transparent;
-  color: #30c97d;
-  border: 1px solid #30c97d;
-}
-
 
 .search > input[type="text"]{
   width: 40%;

@@ -21,7 +21,7 @@ const Search = (props) => {
         <div className="search-wrap">
             <form className="search">
                 <input className="search-field" value={searchValue} onChange={handleSearchInputChanges} type="text"/>
-                <input className="seatch-button" onClick={callSearchFunction} type="submit" value="SEARCH"/>
+                <input className="seatch-button" onClick={callSearchFunction} type="submit" value="Search"/>
             </form>
             <p className="App-intro">Sharing a few of our favourite movies</p>
         </div>
