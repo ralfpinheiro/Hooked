@@ -11,7 +11,7 @@ const Movie = ({movie}) => {
             <div>
                 <img width="175px" alt={`The Movie titled: ${movie.Title}`} src={poster} />
             </div>
-            <p>({movie.Year})</p>
+            <p className="movie-year">({movie.Year})</p>
         </div>
     );
 };

@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  height: 70px;
+  background-color: #4287f5;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +24,7 @@
   color: white;
   padding: 20px;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 
 .spinner {
@@ -26,6 +38,13 @@
 
 /* new css for movie component */
 
+.search > input[type="text"] {
+  height:50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,10 +53,14 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .App-header h2 {
   margin: 0;
+  font-weight: 600;
 }
 
 .add-movies {
@@ -51,8 +74,19 @@
 }
 
 .movie {
-  padding: 5px 25px 10px 25px;
+  padding: 25px 35px 10px 25px;
   max-width: 25%;
+}
+
+.movie h2 {
+  font-size: 18px;
+  color: #252525;
+}
+
+.movie-year {
+  font-size: 12px;
+  color: #404040;
+  font-weight: 300;
 }
 
 .errorMessage {
@@ -61,36 +95,45 @@
   color: rgb(161, 15, 15);
 }
 
+.search-wrap {
+  margin: 80px auto 60px auto;
+}
 
 .search {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
 }
 
 
 input[type="submit"] {
   padding: 5px;
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  width: 80px;
-  margin-left: 5px;
+  height:50px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid #30c97d;
+  margin: 0;
+  background-color: #30c97d;
+  color: white;
+  border: none;
   cursor: pointer;
+  width: 100px;
 }
 
 
 input[type="submit"]:hover {
-  background-color: #282c34;
-  color: antiquewhite;
+  background-color: transparent;
+  color: #30c97d;
+  border: 1px solid #30c97d;
 }
 
 
 .search > input[type="text"]{
   width: 40%;
+  max-width: 400px;
   min-width: 170px;
+  border: 1px solid #ddd;
 }
 
 @media screen and (min-width: 694px) and (max-width: 915px) {

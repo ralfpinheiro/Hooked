@@ -18,10 +18,13 @@ const Search = (props) => {
     }
 
     return (
-        <form className="search">
-            <input value={searchValue} onChange={handleSearchInputChanges} type="text"/>
-            <input onClick={callSearchFunction} type="submit" value="SEARCH"/>
-        </form>
+        <div className="search-wrap">
+            <form className="search">
+                <input className="search-field" value={searchValue} onChange={handleSearchInputChanges} type="text"/>
+                <input className="seatch-button" onClick={callSearchFunction} type="submit" value="SEARCH"/>
+            </form>
+            <p className="App-intro">Sharing a few of our favourite movies</p>
+        </div>
     );
 }
 
